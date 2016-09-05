@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack",
+    "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "heyun",
@@ -21,6 +21,7 @@
     "babel-preset-react": "^6.11.1",
     "eslint": "^3.4.0",
     "webpack": "^1.13.2",
-    "webpack-dev-middleware": "^1.6.1"
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.15.1"
   }
 }
