@@ -1,4 +1,5 @@
 import React,{ Component,PropTypes } from 'react'
+import TodoItem from './TodoItem'
 
 export default class Header extends Component {
     render() {
@@ -6,14 +7,9 @@ export default class Header extends Component {
             <section className="main">
                <input className="toggle-all" type="checkbox" />
                 <ul className="todo-list">
-                    <li className="">
-                        <div className="view" >
-                            <input className="toggle" type="checkbox" />
-                            <label>asdf</label>
-                            <button className="destroy" ></button>
-                        </div>
-                        <input className="edit" value="asdf" />
-                    </li>
+                    <TodoItem>test1</TodoItem>
+                    <TodoItem>test2</TodoItem>
+                    <TodoItem>test3</TodoItem>
                     <li className="completed">
                         <div className="view" >
                             <input className="toggle" type="checkbox" />
