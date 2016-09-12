@@ -2,13 +2,15 @@ import React,{ Component,PropTypes } from 'react'
 
 export default class Header extends Component {
     handleKeyup(e){
-        console.log('handleKeyup');
+        if(e.keyCode===13){
+            console.log('handleKeyup:',e.keyCode);
+        }
     }
     render() {
         return ( 
             <header className="header"> 
                 <h1>Todos</h1>
-                <input className="new-todo" placeholder="想要做点什么?" onKeyup={this.handleKeyup}/>
+                <input className="new-todo" placeholder="想要做点什么?" onKeyUp={this.handleKeyup.bind(this)}/>
             </header>
         )
     }
