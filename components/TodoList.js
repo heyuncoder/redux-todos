@@ -7,6 +7,11 @@ export default class Header extends Component {
             <section className="main">
                <input className="toggle-all" type="checkbox" />
                 <ul className="todo-list">
+                    {
+                        this.props.tasks.map((taks)=> {
+                            <TodoItem>{taks.task}</TodoItem>
+                        })
+                    }
                     <TodoItem>test1</TodoItem>
                     <TodoItem>test2</TodoItem>
                     <TodoItem>test3</TodoItem>
